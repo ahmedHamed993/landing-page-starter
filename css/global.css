@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+:root {
+    --primary:#0003fc;
+    --primary-1:#FCFDFF;
+    --primary-a1:#0055FF03;
+    --primary-2:#F5FAFF;
+    --primary-a2:#0080FF0A;
+    --primary-3:#E9F2FF;
+    --primary-a3:#0069FF16;
+    --primary-4:#DDEAFF;
+    --primary-a4:#0062FF22;
+    --primary-5:#CCDFFF;
+    --primary-a5:#005FFF33;
+    --primary-6:#B6D1FF;
+    --primary-a6:#005FFF49;
+    --primary-7:#96BEFF;
+    --primary-a7:#0062FF69;
+    --primary-8:#6DA2FF;
+    --primary-a8:#005DFF92;
+    --primary-9:#0003FC;
+    --primary-10:#3600BE;
+    --primary-11:#0945FF;
+    --primary-12:#0A2774;
+
+    --gray:#FFFFFF;
+    --gray-1:#FFFFFF;
+    --gray-a1:#FFFFFF03;
+    --gray-2:#FFFFFF;
+    --gray-a2:#FFFFFF0A;
+    --gray-3:#FFFFFF;
+    --gray-a3:#FFFFFF16;
+    --gray-4:#FFFFFF;
+    --gray-a4:#FFFFFF22;
+    --gray-5:#FFFFFF;
+    --gray-a5:#FFFFFF33;
+    --gray-6:#FFFFFF;
+    --gray-a6:#FFFFFF69;
+    --gray-7:#FFFFFF;
+    --gray-a7:#FFFFFF79;
+    --gray-8:#FFFFFF;
+    --gray-a8:#FFFFFF92;
+    --gray-9:#FFFFFF;
+    --gray-10:#FFFFFF;
+    --gray-11:#FFFFFF;
+    --gray-12:#FFFFFF;
+}
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body {
+    font-family: "Ubuntu", sans-serif;
+}
+/* default styles for items  */
+ul {
+    list-style-type: none;
+    padding:0;
+}
+a {
+    text-decoration: none;
+    color:inherit;
+}
+button {
+    border:none;
+    outline:none;
+    padding:0;
+    background: none;
+    cursor: pointer;
+}
+/* container class  */
+.container {
+    margin: 0 auto; 
+    padding: 1rem;
+    max-width: 1200px;
+}
+
+@media (min-width: 768px) {
+    .container {
+      max-width: 768px; /* Adjust for your desired width */
+    }
+}
+  
+@media (min-width: 992px) {
+    .container {
+      max-width: 992px; /* Adjust for your desired width */
+    }
+}
+@media (min-width: 1200px) {
+    .container {
+      max-width: 1200px; /* Adjust for your desired width */
+    }
+}

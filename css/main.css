@@ -1,0 +1,97 @@
+/* start-navbar  */
+.navbar {
+    background-color: var(--primary-4);
+}
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:2rem;
+}
+.navbar__links_wrapper {
+    display:flex;
+    justify-content: center;
+    @media only screen and (max-width:991px) {
+        position: fixed;
+        top:0;
+        right:0;
+        min-height: 100vh;
+        min-height: 100svh;
+        width: 100%;
+        z-index: 9;
+        display:none;
+        pointer-events: none;
+
+    }
+}
+.navbar__links_wrapper.show {
+    @media only screen and (max-width:991px) {
+        /* animation: SlideLeft 400ms ease-in-out 0s 1 normal forwards; */
+        display:flex;
+        pointer-events: fill;
+    }
+}
+.navbar__links_wrapper .navbar__links {
+    display: flex;
+    gap:.25rem;
+    @media only screen and (max-width:991px) {
+        background-color:var(--primary-5);
+        width:450px;
+        flex-direction: column;
+        padding:2rem;
+        position: fixed;
+        top:0;
+        right:-100%;
+    }
+
+    @media only screen and (max-width:768px) {
+        width:260px;
+    }
+}
+.navbar__links_wrapper.show .navbar__links {
+    @media only screen and (max-width:991px) {
+        height: 100%;
+        animation: SlideLeft 200ms ease-in-out 0s 1 normal forwards;
+    }
+}
+
+.navbar__links_wrapper .navbar__links li {
+    box-sizing: border-box;
+}
+.navbar__links_wrapper .navbar__links li a {
+    display: inline-block;
+    padding:.5rem 1rem;
+    border-radius: .25rem;
+    transition:background 200ms ease-in-out;
+    text-transform: capitalize;
+    font-size:1rem;
+    @media only screen and (max-width:991px) {
+        display: block;
+        padding:.5rem;
+    }
+}
+.navbar__links_wrapper .navbar__links li a:hover {
+    background-color: var(--primary-8);
+}
+.navbar__links_wrapper button {
+    display: none;
+    @media only screen and (max-width:991px) {
+        display: flex;
+        flex:1;
+        background-color: #00000080;
+    }
+}
+.navbar .navbar__menu_icon {
+    display: none;
+    @media only screen and (max-width:991px) {
+        display: block;
+    }
+}
+/* end-navbar  */
+@keyframes SlideLeft {
+    0% {
+        rigth:-100%;
+    } 100% {
+        right:0%;
+    }
+}
